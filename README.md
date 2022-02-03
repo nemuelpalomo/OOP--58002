@@ -1,2 +1,2 @@
-# OOP--58002
+# OOP-58002
 Object Oriented Programming Lab
