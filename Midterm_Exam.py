@@ -57,13 +57,18 @@ class MidtermWindow:
 
     def __init__(self, window):
         self.input = Label(window, text='Enter your fullname:', fg='red')
-        self.output = Button(window, text='Click here to display your Fullname', fg='red')
-        self.i1 = Entry(window, width=21, bd=4, font =('Helvetica', 16))
+        self.output = Button(window, text='Click here to display your Fullname', fg='red', command = self.displayName)
         self.o1 = Entry(window, width=21, bd=4, font =('Helvetica', 16))
+        self.i1 = Entry(window, width=21, bd=4, font =('Helvetica', 16))
         self.input.place(x=50, y=100)
-        self.i1.place(x=300, y=150)
+        self.o1.place(x=300, y=150)
         self.output.place(x=50, y=150)
-        self.o1.place(x=300, y=100)
+        self.i1.place(x=300, y=100)
+
+    def displayName(self):
+        self.o1.delete(0, 'end')
+        text = self.i1.get()
+        self.o1.insert(END, str(text))
 
 
 
