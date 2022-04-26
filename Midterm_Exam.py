@@ -80,4 +80,3 @@ window.title('Midterm in OOP')
 window.geometry("600x300+10+10")
 
 window.mainloop()
-
