@@ -5,6 +5,7 @@ calculator.title('Simple Calculator')
 calculator.configure(bg='snow')
 calculator.geometry('328x320')
 
+# Defining Functions for the Calculator
 
 def add_field(number):
     current = txt.get()
@@ -67,11 +68,12 @@ txt.pack(fill='x')
 buttonC = Button(calculator, text='C', fg='black', height=2, width=12, font='bold', command=clear_field)
 buttonC.pack(fill='x')
 
-# Buttons from 0 to 9
+
 
 button_frame = Frame()
 button_frame.pack(side='top', fill='x')
 
+# Button Operators Widget
 
 Addition = Button(button_frame, text='+', fg='black', height=2, width=8, font='bold', command=add)
 Addition.grid(row=4, column=3)
@@ -83,6 +85,8 @@ Division = Button(button_frame, text='/', fg='black', height=2, width=8, font='b
 Division.grid(row=3, column=3)
 Equals = Button(button_frame, text='=', fg='black', height=2, width=8, font='bold', command=equivalent)
 Equals.grid(row=4, column=1)
+
+# Buttons from 0 to 9
 
 button1 = Button(button_frame, text='1', fg='black', height=2, width=8, font='bold', command=lambda: add_field(1))
 button1.grid(row=1, column=0)
