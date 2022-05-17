@@ -10,7 +10,6 @@ txtfld1.insert(0,"row 0, column 0")
 txtfld2 = Entry(window, bd=3, justify="center")
 txtfld2.grid(row=0,column=1, padx=2)
 txtfld2.insert(0,"row 0, column 1")
-
 txtfld3 = Entry(window, bd=3, justify="center")
 txtfld3.grid(row=0,column=2, padx=2)
 txtfld3.insert(0,"row 0, column 2")
