@@ -1,12 +1,12 @@
 import pyodbc
 
 try:
-    connection = pyodbc.connect(r'Driver={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=C:\Users\Nemuel\Documents\Database3.accdb;')
+    connection = pyodbc.connect(r'Driver={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=C:\Users\Nemuel\Documents\Database1.accdb;')
 
     user_id_6 = 6
 
     record = connection.cursor()
-    record.execute("insert into Table1(ID) values (6)")
+    record.execute("insert into tblInventor(ID) values (?)", user_id_6)
     record.commit()
     print("Data is inserted")
 
